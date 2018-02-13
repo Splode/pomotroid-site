@@ -9,3 +9,19 @@
   src: url('~@/assets/fonts/RobotoMono-Light.ttf');
   font-weight: 200;
 }
+
+$colorBlue: #0BBDDB;
+$colorBlueGrey: #858C99;
+$colorGreen: #05EC8C;
+$colorLightNavy: #3D4457;
+$colorNavy: #2F384B;
+$colorRed: #FF4E4D;
+$colorWhite: #F6F2EB;
+
+$grid-sm: 576px;
+$grid-md: 768px;
+$grid-lg: 992px;
+$grid-xl: 1200px;
+
+$transitionDefault: all .3s ease;
+$transitionSnappy: all .3s cubic-bezier(.07,.95,0,1);
