@@ -181,6 +181,7 @@ export default {
 }
 
 .Button {
+  align-items: center;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -252,10 +253,12 @@ export default {
 
 .Icon--md {
   width: 30px;
+  height: 30px;
 }
 
 .Icon--sm {
   width: 20px;
+  height: 20px;
 }
 
 .Icon--blueGrey {
