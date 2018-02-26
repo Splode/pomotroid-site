@@ -5,7 +5,7 @@
       <div class="container Jumbotron">
         <div class="row py-5">
           <div class="col">
-            <img :src="'./static/pomotroid-timer.png'" alt="">
+            <img :src="'./static/pomotroid-timer.png'" alt="Pomotroid timer">
           </div>
         </div>
         <div class="row">
@@ -14,7 +14,7 @@
             <p class="Title-subtitle">A simple, customizable and visually pleasing Pomodoro timer.</p>
             <!-- button -->
             <div class="Button-wrapper mt-5">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid.Setup.0.1.1.exe" alt="Download for Windows">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid.Setup.0.1.1.exe">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
@@ -71,7 +71,7 @@
             <h3>Windows</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid.Setup.0.1.1.exe" alt="Download for Windows">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid.Setup.0.1.1.exe">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
@@ -83,7 +83,7 @@
             <h3>Mac OS</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid-0.1.1.dmg" alt="Download for Windows">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid-0.1.1.dmg">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Mac OS</p>
                 </div>
@@ -112,7 +112,7 @@
             <p>Enjoy using Pomotroid? Spread the word!</p>
             <!-- button -->
             <div class="Button-wrapper my-5">
-              <a href="https://twitter.com/intent/tweet?text=Pomotroid%20-%20a%20simple%2C%20visually-pleasing%2C%20and%20open%20source%20Pomodoro%20timer&url=https%3A%2F%2Fsplode.github.io%2Fpomotroid%2F&hashtags=pomodoro,productivity,open-source&via=splode" alt="Share Pomotroid on Twitter" target="_blank">
+              <a href="https://twitter.com/intent/tweet?text=Pomotroid%20-%20a%20simple%2C%20visually-pleasing%2C%20and%20open%20source%20Pomodoro%20timer&url=https%3A%2F%2Fsplode.github.io%2Fpomotroid%2F&hashtags=pomodoro,productivity,open-source&via=splode" target="_blank">
                 <div class="Button Button--green">
                   <p class="Button-text mr-3">Share on Twitter</p>
                   <svg class="Icon--sm Icon--white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
