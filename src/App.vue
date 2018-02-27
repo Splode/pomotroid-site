@@ -92,12 +92,14 @@
             <!-- end button -->
           </div>
           <div class="col-md-4 text-center">
-            <h3>Linux</h3>
+            <h3>Debian/Ubuntu Linux</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <div class="Button is-disabled Button--filled Button--filled--navy">
-                <p class="Button-text">Coming Soon</p>
-              </div>
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/pomotroid-0.1.1-x86_64.AppImage">
+                <div class="Button Button--filled Button--filled--blue">
+                  <p class="Button-text">Download for Linux</p>
+                </div>
+              </a>
             </div>
             <!-- end button -->
           </div>
