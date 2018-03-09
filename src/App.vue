@@ -14,7 +14,7 @@
             <p class="Title-subtitle">A simple, customizable and visually pleasing Pomodoro timer.</p>
             <!-- button -->
             <div class="Button-wrapper mt-5">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid.Setup.0.1.1.exe">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/Pomotroid.Setup.0.1.2.exe">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
@@ -71,7 +71,7 @@
             <h3>Windows</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid.Setup.0.1.1.exe">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/Pomotroid.Setup.0.1.2.exe">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
@@ -83,7 +83,7 @@
             <h3>Mac OS</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/Pomotroid-0.1.1.dmg">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/Pomotroid-0.1.2.dmg">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Mac OS</p>
                 </div>
@@ -95,7 +95,7 @@
             <h3>Debian/Ubuntu Linux</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.1/pomotroid-0.1.1-x86_64.AppImage">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/pomotroid-0.1.2-x86_64.AppImage">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Linux</p>
                 </div>
