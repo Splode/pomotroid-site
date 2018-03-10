@@ -8,4 +8,4 @@ branches:
   only:
   - master
   - dev
-- /.*/
+  - /.*/
