@@ -10,6 +10,8 @@ branches:
   - dev
   - gh-pages
 deploy:
+  edge:
+    branch: v1.8.47
   provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
