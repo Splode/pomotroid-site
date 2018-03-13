@@ -8,7 +8,6 @@ branches:
   only:
   - master
   - dev
-  - gh-pages
 deploy:
   edge:
     branch: v1.8.47
