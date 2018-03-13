@@ -11,7 +11,7 @@
         <div class="row">
           <div class="col">
             <h1 class="Title">Pomotroid</h1>
-            <p class="Title-subtitle">A simple, customizable and visually pleasing Pomodoro timer.</p>
+            <p class="Title-subtitle">A simple, configurable and visually pleasing Pomodoro timer.</p>
             <!-- button -->
             <div class="Button-wrapper mt-5">
               <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/Pomotroid.Setup.0.1.2.exe">
@@ -168,8 +168,15 @@ import appRounder from './components/Rounder'
 
 export default {
   name: 'App',
+
   components: {
     appRounder
+  },
+
+  computed: {
+    os () {
+      return navigator.platform
+    }
   }
 }
 </script>
