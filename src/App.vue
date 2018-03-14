@@ -14,9 +14,9 @@
             <p class="Title-subtitle">A simple, configurable and visually pleasing Pomodoro timer.</p>
             <!-- button -->
             <div class="Button-wrapper mt-5">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid.Setup.0.2.0.exe">
+              <a :href="platformInfo.link">
                 <div class="Button Button--filled Button--filled--blue">
-                  <p class="Button-text">Download for Windows</p>
+                  <p class="Button-text">Download for {{ platformInfo.platform }}</p>
                 </div>
               </a>
             </div>
@@ -71,7 +71,7 @@
             <h3>Windows</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid.Setup.0.2.0.exe">
+              <a :href="downloadLinks.windows">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
@@ -83,9 +83,9 @@
             <h3>Mac OS</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid-0.2.0.dmg">
+              <a :href="downloadLinks.mac">
                 <div class="Button Button--filled Button--filled--blue">
-                  <p class="Button-text">Download for Mac OS</p>
+                  <p class="Button-text">Download for Mac</p>
                 </div>
               </a>
             </div>
@@ -95,7 +95,7 @@
             <h3>Debian/Ubuntu Linux</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/pomotroid-0.2.0-x86_64.AppImage">
+              <a :href="downloadLinks.linux">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Linux</p>
                 </div>
@@ -173,8 +173,35 @@ export default {
     appRounder
   },
 
+  data () {
+    return {
+      downloadLinks: {
+        windows: 'https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid.Setup.0.2.0.exe',
+        mac: 'https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid-0.2.0.dmg',
+        linux: 'https://github.com/Splode/pomotroid/releases/download/v0.2.0/pomotroid-0.2.0-x86_64.AppImage'
+      },
+      platforms: {
+        windows: ['Windows', 'Win32', 'Win64'],
+        mac: ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+        linux: ['Linux', 'Linux aarch64', 'Linux x86_64']
+      }
+    }
+  },
+
   computed: {
-    os () {
+    platformInfo () {
+      if (this.platforms.windows.indexOf(this.platform) !== -1) {
+        return { platform: 'Windows', link: this.downloadLinks.windows }
+      } else if (this.platforms.mac.indexOf(this.platform) !== -1) {
+        return { platform: 'Mac', link: this.downloadLinks.mac }
+      } else if (this.platforms.linux.indexOf(this.platform) !== -1) {
+        return { platform: 'Linux', link: this.downloadLinks.linux }
+      } else {
+        return { platform: 'Windows', link: this.downloadLinks.windows }
+      }
+    },
+
+    platform () {
       return navigator.platform
     }
   }
