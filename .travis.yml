@@ -1,14 +1,13 @@
 language: node_js
 node_js:
   - 'lts/*'
-  - 'node'
-  - '8'
-script: npm run build
+script:
+  - npm test
+  - npm run build
 branches:
   only:
   - master
   - dev
-  - gh-pages
 deploy:
   edge:
     branch: v1.8.47

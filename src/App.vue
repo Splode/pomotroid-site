@@ -11,10 +11,10 @@
         <div class="row">
           <div class="col">
             <h1 class="Title">Pomotroid</h1>
-            <p class="Title-subtitle">A simple, customizable and visually pleasing Pomodoro timer.</p>
+            <p class="Title-subtitle">A simple, configurable and visually pleasing Pomodoro timer.</p>
             <!-- button -->
             <div class="Button-wrapper mt-5">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/Pomotroid.Setup.0.1.2.exe">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid.Setup.0.2.0.exe">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
@@ -49,7 +49,7 @@
           </ul>
         </div>
         <div class="col-lg-8">
-          <img :src="'./static/pomotroid-screens.png'" alt="Pomotroid screenshots">
+          <img :src="'./static/pomotroid-screens.jpg'" alt="Pomotroid screenshots">
         </div>
       </div>
     </div>
@@ -71,7 +71,7 @@
             <h3>Windows</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/Pomotroid.Setup.0.1.2.exe">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid.Setup.0.2.0.exe">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
@@ -83,7 +83,7 @@
             <h3>Mac OS</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/Pomotroid-0.1.2.dmg">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/Pomotroid-0.2.0.dmg">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Mac OS</p>
                 </div>
@@ -95,7 +95,7 @@
             <h3>Debian/Ubuntu Linux</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
-              <a href="https://github.com/Splode/pomotroid/releases/download/v0.1.2/pomotroid-0.1.2-x86_64.AppImage">
+              <a href="https://github.com/Splode/pomotroid/releases/download/v0.2.0/pomotroid-0.2.0-x86_64.AppImage">
                 <div class="Button Button--filled Button--filled--blue">
                   <p class="Button-text">Download for Linux</p>
                 </div>
@@ -168,8 +168,15 @@ import appRounder from './components/Rounder'
 
 export default {
   name: 'App',
+
   components: {
     appRounder
+  },
+
+  computed: {
+    os () {
+      return navigator.platform
+    }
   }
 }
 </script>
