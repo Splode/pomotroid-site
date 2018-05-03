@@ -114,7 +114,7 @@
             <p>Enjoy using Pomotroid? Spread the word!</p>
             <!-- button -->
             <div class="Button-wrapper my-5">
-              <a href="https://twitter.com/intent/tweet?text=Pomotroid%20-%20a%20simple%2C%20visually-pleasing%2C%20and%20open%20source%20Pomodoro%20timer&url=https%3A%2F%2Fsplode.github.io%2Fpomotroid%2F&hashtags=pomodoro,productivity,open-source&via=splode" target="_blank">
+              <a href="https://twitter.com/intent/tweet?text=Pomotroid%20-%20a%20simple%2C%20visually-pleasing%2C%20and%20open%20source%20Pomodoro%20timer&url=https%3A%2F%2Fsplode.github.io%2Fpomotroid%2F&hashtags=pomodoro,productivity,opensource&via=splode" target="_blank">
                 <div class="Button Button--green">
                   <p class="Button-text mr-3">Share on Twitter</p>
                   <svg class="Icon--sm Icon--white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
