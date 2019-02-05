@@ -5,7 +5,10 @@
       <div class="container Jumbotron">
         <div class="row py-5">
           <div class="col">
-            <img :src="'./static/pomotroid-timer.png'" alt="Pomotroid timer">
+            <img
+              :src="'./static/pomotroid-timer.png'"
+              alt="Pomotroid timer"
+            >
           </div>
         </div>
         <div class="row">
@@ -26,7 +29,10 @@
       </div>
     </div>
     <!-- end jumbotron -->
-    <app-rounder :color="'navy'" :direction="'down'"/>
+    <app-rounder
+      :color="'navy'"
+      :direction="'down'"
+    />
 
     <!-- features -->
     <div class="container Section Section--light my-5 py-5">
@@ -49,13 +55,16 @@
           </ul>
         </div>
         <div class="col-lg-8">
-          <img :src="'./static/pomotroid-screens.jpg'" alt="Pomotroid screenshots">
+          <img
+            :src="'./static/pomotroid-screens.jpg'"
+            alt="Pomotroid screenshots"
+          >
         </div>
       </div>
     </div>
     <!-- end features -->
 
-    <app-rounder/>
+    <app-rounder />
     <!-- section lower -->
     <div class="container-fluid u-bg-lightNavy">
       <div class="container">
@@ -109,16 +118,31 @@
         <div class="row mt-5 py-5 Section">
           <div class="col text-center">
             <h2 class="Section-title Section-title--borderGreen">Feedback</h2>
-            <p>Found a bug or would like to suggest a new feature? <a href="https://github.com/Splode/pomotroid/issues" class="LinkInline LinkInline--green" target="_blank">Open an issue</a>.</p>
-            <p>Feel free to explore the source or contribute via the <a href="https://github.com/Splode/pomotroid" class="LinkInline LinkInline--green" target="_blank">GitHub repo</a>.</p>
+            <p>Found a bug or would like to suggest a new feature? <a
+                href="https://github.com/Splode/pomotroid/issues"
+                class="LinkInline LinkInline--green"
+                target="_blank"
+              >Open an issue</a>.</p>
+            <p>Feel free to explore the source or contribute via the <a
+                href="https://github.com/Splode/pomotroid"
+                class="LinkInline LinkInline--green"
+                target="_blank"
+              >GitHub repo</a>.</p>
             <p>Enjoy using Pomotroid? Spread the word!</p>
             <!-- button -->
             <div class="Button-wrapper my-5">
-              <a href="https://twitter.com/intent/tweet?text=Pomotroid%20-%20a%20simple%2C%20visually-pleasing%2C%20and%20open%20source%20Pomodoro%20timer&url=https%3A%2F%2Fsplode.github.io%2Fpomotroid%2F&hashtags=pomodoro,productivity,opensource&via=splode" target="_blank">
+              <a
+                href="https://twitter.com/intent/tweet?text=Pomotroid%20-%20a%20simple%2C%20visually-pleasing%2C%20and%20open%20source%20Pomodoro%20timer&url=https%3A%2F%2Fsplode.github.io%2Fpomotroid%2F&hashtags=pomodoro,productivity,opensource&via=splode"
+                target="_blank"
+              >
                 <div class="Button Button--green">
                   <p class="Button-text mr-3">Share on Twitter</p>
-                  <svg class="Icon--sm Icon--white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"/>
+                  <svg
+                    class="Icon--sm Icon--white"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
                   </svg>
                 </div>
               </a>
@@ -139,14 +163,34 @@
             <p>Pomotroid is free and open source software created and maintained by Christopher Murphy.</p>
           </div>
           <div class="col-12 text-center">
-            <a href="https://github.com/Splode" target="_blank">
-              <svg class="Icon--button Icon--md Icon--blueGrey mr-3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            <a
+              href="https://github.com/Splode"
+              target="_blank"
+            >
+              <svg
+                class="Icon--button Icon--md Icon--blueGrey mr-3"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
               </svg>
             </a>
-            <a href="https://twitter.com/splode" target="_blank">
-              <svg class="Icon--button Icon--md Icon--blueGrey" version="1.2" baseProfile="tiny" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" viewBox="-454 256.3 49.7 49.7" xml:space="preserve">
+            <a
+              href="https://twitter.com/splode"
+              target="_blank"
+            >
+              <svg
+                class="Icon--button Icon--md Icon--blueGrey"
+                version="1.2"
+                baseProfile="tiny"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="-454 256.3 49.7 49.7"
+                xml:space="preserve"
+              >
                 <path d="M-429.2,256.3c-13.7,0-24.8,11.1-24.8,24.8c0,13.7,11.1,24.8,24.8,24.8c13.7,0,24.8-11.1,24.8-24.8
                 C-404.3,267.5-415.5,256.3-429.2,256.3z M-418.1,275.5c0,0.2,0,0.5,0,0.7c0,7.6-5.7,16.3-16.3,16.3c-3.2,0-6.2-0.9-8.8-2.6
                 c0.4,0.1,0.9,0.1,1.4,0.1c2.7,0,5.1-0.9,7.1-2.4c-2.5,0-4.6-1.7-5.3-4c0.3,0.1,0.7,0.1,1.1,0.1c0.5,0,1-0.1,1.5-0.2
@@ -173,12 +217,15 @@ export default {
     appRounder
   },
 
-  data () {
+  data() {
     return {
       downloadLinks: {
-        windows: 'https://github.com/Splode/pomotroid/releases/download/v0.5.0/Pomotroid-setup-0.5.0-64-bit.exe',
-        mac: 'https://github.com/Splode/pomotroid/releases/download/v0.5.0/pomotroid-setup-0.5.0.dmg',
-        linux: 'https://github.com/Splode/pomotroid/releases/download/v0.5.0/Pomotroid-setup-0.5.0-x86_64.AppImage'
+        windows:
+          'https://github.com/Splode/pomotroid/releases/download/v0.5.0/Pomotroid-setup-0.5.0-64-bit.exe',
+        mac:
+          'https://github.com/Splode/pomotroid/releases/download/v0.5.0/pomotroid-setup-0.5.0.dmg',
+        linux:
+          'https://github.com/Splode/pomotroid/releases/download/v0.5.0/Pomotroid-setup-0.5.0-x86_64.AppImage'
       },
       platforms: {
         windows: ['Windows', 'Win32', 'Win64'],
@@ -189,7 +236,7 @@ export default {
   },
 
   computed: {
-    platformInfo () {
+    platformInfo() {
       if (this.platforms.windows.indexOf(this.platform) !== -1) {
         return { platform: 'Windows', link: this.downloadLinks.windows }
       } else if (this.platforms.mac.indexOf(this.platform) !== -1) {
@@ -201,7 +248,7 @@ export default {
       }
     },
 
-    platform () {
+    platform() {
       return navigator.platform
     }
   }
@@ -222,7 +269,7 @@ export default {
   cursor: pointer;
   display: flex;
   font-size: 1.15rem;
-  padding: .75em 2em;
+  padding: 0.75em 2em;
   max-width: 300px;
   z-index: 0;
   &.is-disabled {
@@ -235,7 +282,7 @@ export default {
   &::before {
     border-radius: 50px;
     content: '';
-    opacity: .5;
+    opacity: 0.5;
     position: absolute;
     top: 0;
     left: 0;
@@ -245,8 +292,8 @@ export default {
     z-index: -1;
   }
   &:hover::before {
-      filter: blur(10px);
-    }
+    filter: blur(10px);
+  }
 }
 
 .Button--green {
@@ -266,9 +313,9 @@ export default {
 }
 
 .Button-text {
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   margin: 0;
-  padding: 0 0 .25em 0;
+  padding: 0 0 0.25em 0;
 }
 
 .Footer {
@@ -335,7 +382,7 @@ export default {
 }
 
 .Section {
-  letter-spacing: .025em;
+  letter-spacing: 0.025em;
   line-height: 2em;
 }
 
@@ -391,7 +438,7 @@ export default {
   color: $colorGreen;
   font-size: 3rem;
   font-weight: 400;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   @media screen and (min-width: $grid-sm) {
     font-size: 4.5rem;
   }
@@ -402,7 +449,7 @@ export default {
 
 .Title-subtitle {
   font-size: 1.15rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   line-height: 2em;
   @media screen and (min-width: $grid-sm) {
     font-size: 1.5rem;
