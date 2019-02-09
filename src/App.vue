@@ -221,11 +221,11 @@ export default {
     return {
       downloadLinks: {
         windows:
-          'https://github.com/Splode/pomotroid/releases/download/v0.5.0/Pomotroid-setup-0.5.0-64-bit.exe',
+          'https://github.com/Splode/pomotroid/releases/download/v0.6.0/Pomotroid-setup-0.6.0-64-bit.exe',
         mac:
-          'https://github.com/Splode/pomotroid/releases/download/v0.5.0/pomotroid-setup-0.5.0.dmg',
+          'https://github.com/Splode/pomotroid/releases/download/v0.6.0/Pomotroid-setup-0.6.0.dmg',
         linux:
-          'https://github.com/Splode/pomotroid/releases/download/v0.5.0/Pomotroid-setup-0.5.0-x86_64.AppImage'
+          'https://github.com/Splode/pomotroid/releases/download/v0.6.0/Pomotroid-setup-0.6.0-x86_64.AppImage'
       },
       platforms: {
         windows: ['Windows', 'Win32', 'Win64'],
