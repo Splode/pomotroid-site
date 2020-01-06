@@ -5,7 +5,7 @@
       <div class="container Jumbotron">
         <div class="row py-5">
           <div class="col">
-            <img :src="'./static/pomotroid-timer.png'" alt="Pomotroid timer" />
+            <img :src="'./pomotroid-timer.png'" alt="Pomotroid timer" />
           </div>
         </div>
         <div class="row">
@@ -64,10 +64,7 @@
           </ul>
         </div>
         <div class="col-lg-8">
-          <img
-            :src="'./static/pomotroid-screens.jpg'"
-            alt="Pomotroid screenshots"
-          />
+          <img :src="'./pomotroid-screens.jpg'" alt="Pomotroid screenshots" />
         </div>
       </div>
     </div>
