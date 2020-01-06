@@ -1,6 +1,6 @@
 {
   "name": "pomotroid-site",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Landing page for the Pomotroid app",
   "author": "Christopher Murphy <flyweight@pm.me>",
   "private": true,
