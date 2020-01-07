@@ -106,7 +106,7 @@
             <!-- end button -->
           </div>
           <div class="col-md-4 text-center">
-            <h3>Debian/Ubuntu Linux</h3>
+            <h3>Linux</h3>
             <!-- button -->
             <div class="Button-wrapper mt-3">
               <a :href="downloadLinks.linux">
