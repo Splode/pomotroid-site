@@ -228,7 +228,7 @@ export default {
   name: 'App',
 
   components: {
-    appRounder
+    appRounder,
   },
 
   data() {
@@ -239,13 +239,13 @@ export default {
         mac:
           'https://github.com/Splode/pomotroid/releases/download/v0.7.0/pomotroid-0.7.0-macos.dmg',
         linux:
-          'https://github.com/Splode/pomotroid/releases/download/v0.7.0/pomotroid-0.7.0-linux.tar.gz'
+          'https://github.com/Splode/pomotroid/releases/download/v0.7.0/pomotroid-0.7.0-linux.tar.gz',
       },
       platforms: {
         windows: ['Windows', 'Win32', 'Win64'],
         mac: ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
-        linux: ['Linux', 'Linux aarch64', 'Linux x86_64']
-      }
+        linux: ['Linux', 'Linux aarch64', 'Linux x86_64'],
+      },
     }
   },
 
@@ -264,8 +264,8 @@ export default {
 
     platform() {
       return navigator.platform
-    }
-  }
+    },
+  },
 }
 </script>
 
