@@ -26,35 +26,35 @@ export default {
       type: String,
       default: 'lightNavy',
       required: false,
-      validator: val => {
+      validator: (val) => {
         return val === 'navy' || val === 'lightNavy'
-      }
+      },
     },
     direction: {
       type: String,
       default: 'up',
       required: false,
-      validator: val => {
+      validator: (val) => {
         return val === 'up' || val === 'down'
-      }
-    }
+      },
+    },
   },
 
   computed: {
     RounderClasses() {
       return {
         isDown: this.direction === 'down',
-        isUp: this.direction === 'up'
+        isUp: this.direction === 'up',
       }
     },
 
     RounderFillClasses() {
       return {
         isLightNavy: this.color === 'lightNavy',
-        isNavy: this.color === 'navy'
+        isNavy: this.color === 'navy',
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
