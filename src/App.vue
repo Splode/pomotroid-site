@@ -43,7 +43,7 @@
             <li class="TextList-item">
               <h3>Custom Times &amp; Rounds</h3>
               <p>
-                Customize work, short break, long break, and rounds to fit your
+                Customize focus, short break, long break, and rounds to fit your
                 workflow.
               </p>
             </li>
@@ -51,7 +51,7 @@
               <h3>Charming Sound Notifications</h3>
               <p>
                 Pleasing chimes let you know when it’s time to take a break or
-                get back to work.
+                start focussing.
               </p>
             </li>
             <li class="TextList-item">
@@ -64,7 +64,7 @@
           </ul>
         </div>
         <div class="col-lg-8">
-          <img :src="'./pomotroid-screens.jpg'" alt="Pomotroid screenshots" />
+          <img :src="'./pomotroid-screens.png'" alt="Pomotroid screenshots" />
         </div>
       </div>
     </div>
