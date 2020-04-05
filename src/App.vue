@@ -64,7 +64,7 @@
           </ul>
         </div>
         <div class="col-lg-8">
-          <img :src="'./pomotroid-screens.jpg'" alt="Pomotroid screenshots" />
+          <img :src="'./pomotroid-screens.png'" alt="Pomotroid screenshots" />
         </div>
       </div>
     </div>
