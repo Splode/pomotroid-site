@@ -129,7 +129,23 @@
       content="./favicons/ms-icon-144x144.png"
     />
     <meta name="theme-color" content="#2F384B" />
-    <script async defer data-domain="splode.github.io" src="https://plausible.io/js/plausible.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Pomotroid",
+        "operatingSystem": "Windows, Linux, macOS",
+        "applicationCategory": "Productivity",
+        "downloadUrl": "https://github.com/Splode/pomotroid/releases"
+      }
+    </script>
+
+    <script
+      async
+      defer
+      data-domain="splode.github.io"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
   </head>
   <body>
     <div id="app"></div>
