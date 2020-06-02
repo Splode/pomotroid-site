@@ -17,7 +17,7 @@
             <!-- button -->
             <div class="Button-wrapper mt-5">
               <a :href="platformInfo.link">
-                <div class="Button Button--filled Button--filled--blue">
+                <div class="Button Button--blue">
                   <p class="Button-text">
                     Download for {{ platformInfo.platform }}
                   </p>
@@ -86,7 +86,7 @@
             <!-- button -->
             <div class="Button-wrapper mt-3">
               <a :href="downloadLinks.windows">
-                <div class="Button Button--filled Button--filled--blue">
+                <div class="Button Button--blue">
                   <p class="Button-text">Download for Windows</p>
                 </div>
               </a>
@@ -98,7 +98,7 @@
             <!-- button -->
             <div class="Button-wrapper mt-3">
               <a :href="downloadLinks.mac">
-                <div class="Button Button--filled Button--filled--blue">
+                <div class="Button Button--blue">
                   <p class="Button-text">Download for Mac</p>
                 </div>
               </a>
@@ -110,7 +110,7 @@
             <!-- button -->
             <div class="Button-wrapper mt-3">
               <a :href="downloadLinks.linux">
-                <div class="Button Button--filled Button--filled--blue">
+                <div class="Button Button--blue">
                   <p class="Button-text">Download for Linux</p>
                 </div>
               </a>
@@ -179,7 +179,14 @@
           <div class="col-12 text-center">
             <p>
               Pomotroid is free and open source software created and maintained
-              by Christopher Murphy.
+              by
+              <a
+                href="https://christophermurphy.dev"
+                class="LinkInline LinkInline--green"
+                target="_blank"
+                rel="noopener"
+                >Christopher Murphy</a
+              >.
             </p>
           </div>
           <div class="col-12 text-center">
@@ -306,38 +313,19 @@ export default {
   }
 }
 
-.Button--filled {
-  position: relative;
-  &::before {
-    border-radius: 50px;
-    content: '';
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: $transitionSnappy;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  &:hover::before {
-    filter: blur(10px);
+.Button--blue {
+  border: 2px solid $colorBlue;
+  transition: $transitionSnappy;
+  &:hover {
+    box-shadow: 0px 0px 8px 0px $colorBlue;
   }
 }
 
 .Button--green {
   border: 2px solid $colorGreen;
-}
-
-.Button--filled--navy {
-  background-color: $colorNavy;
-  color: $colorBlueGrey;
-}
-
-.Button--filled--blue {
-  background-color: $colorBlue;
-  &::before {
-    background-color: $colorBlue;
+  transition: $transitionSnappy;
+  &:hover {
+    box-shadow: 0px 0px 8px 0px $colorGreen;
   }
 }
 
@@ -398,7 +386,7 @@ export default {
     left: 0;
     transition: $transitionSnappy;
     width: 0;
-    height: 4px;
+    height: 2px;
   }
 }
 
