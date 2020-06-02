@@ -1,17 +1,19 @@
 @font-face {
+  font-display: swap;
   font-family: 'Lato';
   font-weight: 400;
   src: url('~@/assets/fonts/Lato-Regular.ttf');
 }
 
 @font-face {
+  font-display: swap;
   font-family: 'RobotoMono';
-  src: url('~@/assets/fonts/RobotoMono-Light.ttf');
   font-weight: 200;
+  src: url('~@/assets/fonts/RobotoMono-Light.ttf');
 }
 
 $colorBlue: #0bbddb;
-$colorBlueGrey: #858c99;
+$colorBlueGrey: #c8ccd3;
 $colorGreen: #05ec8c;
 $colorLightNavy: #3d4457;
 $colorNavy: #2f384b;
