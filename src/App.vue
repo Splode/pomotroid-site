@@ -129,6 +129,7 @@
                 href="https://github.com/Splode/pomotroid/issues"
                 class="LinkInline LinkInline--green"
                 target="_blank"
+                rel="noopener"
                 >Open an issue</a
               >.
             </p>
@@ -138,6 +139,7 @@
                 href="https://github.com/Splode/pomotroid"
                 class="LinkInline LinkInline--green"
                 target="_blank"
+                rel="noopener"
                 >GitHub repo</a
               >.
             </p>
@@ -147,6 +149,7 @@
               <a
                 href="https://twitter.com/intent/tweet?text=Pomotroid%20-%20a%20simple%2C%20visually-pleasing%2C%20and%20open%20source%20Pomodoro%20timer&url=https%3A%2F%2Fsplode.github.io%2Fpomotroid%2F&hashtags=pomodoro,productivity,opensource&via=splode"
                 target="_blank"
+                rel="noopener"
               >
                 <div class="Button Button--green">
                   <p class="Button-text mr-3">Share on Twitter</p>
@@ -180,7 +183,13 @@
             </p>
           </div>
           <div class="col-12 text-center">
-            <a href="https://github.com/Splode" target="_blank">
+            <a
+              href="https://github.com/Splode"
+              target="_blank"
+              rel="noopener"
+              aria-label="Christopher Murphy on GitHub"
+              title="Christopher Murphy on GitHub"
+            >
               <svg
                 class="Icon--button Icon--md Icon--blueGrey mr-3"
                 viewBox="0 0 24 24"
@@ -191,7 +200,13 @@
                 />
               </svg>
             </a>
-            <a href="https://twitter.com/splode" target="_blank">
+            <a
+              href="https://twitter.com/splode"
+              target="_blank"
+              rel="noopener"
+              aria-label="Christopher Murphy on Twitter"
+              title="Christopher Murphy on Twitter"
+            >
               <svg
                 class="Icon--button Icon--md Icon--blueGrey"
                 version="1.2"
