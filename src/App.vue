@@ -4,8 +4,8 @@
     <div class="container-fluid pb-5 Jumbotron-wrapper u-bg-navy">
       <div class="container Jumbotron">
         <div class="row py-5">
-          <div class="col">
-            <img :src="'./pomotroid-timer.png'" alt="Pomotroid timer" />
+          <div class="col-8 col-lg-4 col-md-6 mx-auto">
+            <img :src="'./pomotroid-site-timer.svg'" alt="Pomotroid timer" />
           </div>
         </div>
         <div class="row">
