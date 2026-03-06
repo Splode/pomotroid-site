@@ -1,5 +1,7 @@
 # pomotroid-site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c6f61c52-65b1-49eb-846f-02492b8d3a5e/deploy-status)](https://app.netlify.com/projects/pomotroid/deploys)
+
 > Landing page for the [Pomotroid app](https://github.com/Splode/pomotroid) — [pomotroid.app](https://pomotroid.app)
 
 Built with [Hugo](https://gohugo.io) (Extended). No Node.js required.
