@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+
+    <!-- ── Hero ──────────────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="container">
+
+        <div class="hero__image">
+          <img src="/pomotroid-site-timer.svg" alt="Pomotroid timer" />
+        </div>
+
+        <h1 class="hero__title">Pomotroid</h1>
+        <p class="hero__subtitle">A simple, configurable and visually pleasing Pomodoro timer.</p>
+
+        <div class="hero__downloads">
+
+          <!-- Windows -->
+          <div class="platform">
+            <span class="platform__label">Windows</span>
+            <a href="{{ .Site.Params.downloads.windows.primary }}" class="btn btn--blue">
+              {{ .Site.Params.downloads.windows.primaryLabel }}
+            </a>
+          </div>
+
+          <!-- macOS -->
+          <div class="platform">
+            <span class="platform__label">macOS</span>
+            <a href="{{ .Site.Params.downloads.mac.primary }}" class="btn btn--blue">
+              {{ .Site.Params.downloads.mac.primaryLabel }}
+            </a>
+          </div>
+
+          <!-- Linux -->
+          <div class="platform">
+            <span class="platform__label">Linux</span>
+            <a href="{{ .Site.Params.downloads.linux.primary }}" class="btn btn--blue">
+              {{ .Site.Params.downloads.linux.primaryLabel }}
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features ──────────────────────────────────────────────────────── -->
+    <section class="section section--light">
+      <div class="container">
+        <h2 class="section-title section-title--red">Features</h2>
+        <div class="features">
+
+          <ul class="features__list">
+            <li class="feature-item">
+              <h3 class="feature-item__title">Fully configurable</h3>
+              <p class="feature-item__desc">Set your own focus duration, short break, long break, and rounds per cycle. Global shortcuts let you start, pause, and skip rounds without switching windows.</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-item__title">Session statistics</h3>
+              <p class="feature-item__desc">Every completed session is logged. Review your day at a glance, track weekly streaks, and explore your full history with a 52-week heatmap.</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-item__title">37 themes — or your own</h3>
+              <p class="feature-item__desc">Ships with Nord, Dracula, Catppuccin, Gruvbox, Tokyo Night, and more. Drop a JSON file into the themes folder for a custom theme. Changes apply instantly, no restart required.</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-item__title">Runs quietly in the background</h3>
+              <p class="feature-item__desc">Minimize or close to tray and keep the timer running. A dynamic tray icon shows your progress arc in real time, and desktop notifications handle round transitions.</p>
+            </li>
+            <li class="feature-item">
+              <h3 class="feature-item__title">Seven languages</h3>
+              <p class="feature-item__desc">Auto-detects your OS language. Available in English, Spanish, French, German, Japanese, Simplified Chinese, and Portuguese.</p>
+            </li>
+          </ul>
+
+          <div class="features__screenshot">
+            <img src="/pomotroid-screens.png" alt="Pomotroid screenshots" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Downloads ─────────────────────────────────────────────────────── -->
+    <section class="section section--mid">
+      <div class="container">
+        <div style="text-align: center;">
+          <h2 class="section-title section-title--blue">Download</h2>
+        </div>
+        <div class="downloads-grid">
+
+          <!-- Windows -->
+          <div class="platform">
+            <h3 class="download-col__heading">Windows</h3>
+            <a href="{{ .Site.Params.downloads.windows.primary }}" class="btn btn--blue">
+              {{ .Site.Params.downloads.windows.primaryLabel }}
+            </a>
+            <a href="{{ .Site.Params.downloads.windows.secondary }}" class="platform__secondary">
+              {{ .Site.Params.downloads.windows.secondaryLabel }}
+            </a>
+          </div>
+
+          <!-- macOS -->
+          <div class="platform">
+            <h3 class="download-col__heading">macOS</h3>
+            <a href="{{ .Site.Params.downloads.mac.primary }}" class="btn btn--blue">
+              {{ .Site.Params.downloads.mac.primaryLabel }}
+            </a>
+            <code class="platform__brew">{{ .Site.Params.downloads.mac.brew }}</code>
+          </div>
+
+          <!-- Linux -->
+          <div class="platform">
+            <h3 class="download-col__heading">Linux</h3>
+            <a href="{{ .Site.Params.downloads.linux.primary }}" class="btn btn--blue">
+              {{ .Site.Params.downloads.linux.primaryLabel }}
+            </a>
+            <a href="{{ .Site.Params.downloads.linux.secondary }}" class="platform__secondary">
+              {{ .Site.Params.downloads.linux.secondaryLabel }}
+            </a>
+          </div>
+
+        </div>
+
+        <!-- ── Feedback ────────────────────────────────────────────────── -->
+        <div class="section" style="padding-bottom: 0;">
+          <div class="feedback">
+            <h2 class="section-title section-title--green">Feedback</h2>
+            <p>
+              Found a bug or would like to suggest a new feature?
+              <a href="https://github.com/Splode/pomotroid/issues" class="link-inline link-inline--green" target="_blank" rel="noopener">Open an issue</a>.
+            </p>
+            <p>
+              Feel free to explore the source or contribute via the
+              <a href="https://github.com/Splode/pomotroid" class="link-inline link-inline--green" target="_blank" rel="noopener">GitHub repo</a>.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Footer ────────────────────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text">
+          Pomotroid is free and open source software created and maintained by
+          <a href="https://christophermurphy.dev" class="link-inline link-inline--green" target="_blank" rel="noopener">Christopher Murphy</a>.
+        </p>
+        <p class="footer__built">Built with Tauri, Rust, and Svelte.</p>
+        <div class="footer__icons">
+          <a href="https://github.com/Splode" target="_blank" rel="noopener" aria-label="Christopher Murphy on GitHub" title="Christopher Murphy on GitHub" class="icon-link">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

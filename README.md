@@ -1,19 +1,35 @@
 # pomotroid-site
 
-> Landing page for the [Pomotroid app](https://github.com/Splode/pomotroid)
+> Landing page for the [Pomotroid app](https://github.com/Splode/pomotroid) — [pomotroid.app](https://pomotroid.app)
 
-## Build Setup
+Built with [Hugo](https://gohugo.io) (Extended). No Node.js required.
+
+## Prerequisites
+
+[Hugo Extended](https://gohugo.io/installation/) v0.157.0 or later.
 
 ```bash
-# install dependencies
-npm install
+# macOS
+brew install hugo
 
-# serve with hot reload at localhost:8080
-npm run serve
-
-# build for production with minification
-npm run build
-
-# lint files
-npm run lint
+# or download from https://github.com/gohugoio/hugo/releases
 ```
+
+## Development
+
+```bash
+# Serve with live reload at localhost:1313
+hugo server
+
+# Build for production
+hugo --minify
+```
+
+## Updating a release
+
+Edit `hugo.toml` and update the version and download URLs under `[params.downloads]`. No template changes needed.
+
+## Deployment
+
+- **Netlify** — auto-deploys on push to `main` using `netlify.toml`
+- **GitHub Pages** (`splode.github.io/pomotroid/`) — GitHub Actions deploys a redirect page pointing to `pomotroid.app`

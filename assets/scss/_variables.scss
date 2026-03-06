@@ -1,0 +1,31 @@
+// Color tokens — aligned with Pomotroid app theme CSS custom properties
+:root {
+  --color-background:        #2f384b;
+  --color-background-light:  #3d4457;
+  --color-background-lightest: #9ca5b5;
+  --color-foreground:        #f6f2eb;
+  --color-foreground-darker: #c0c9da;
+  --color-long-round:        #0bbddb;
+  --color-short-round:       #05ec8c;
+  --color-focus-round:       #ff4e4d;
+  --color-accent:            #05ec8c;
+}
+
+// SCSS aliases for template use
+$color-background:        #2f384b;
+$color-background-light:  #3d4457;
+$color-foreground:        #f6f2eb;
+$color-foreground-darker: #c0c9da;
+$color-blue:              #0bbddb;
+$color-green:             #05ec8c;
+$color-red:               #ff4e4d;
+
+// Breakpoints
+$bp-sm:  576px;
+$bp-md:  768px;
+$bp-lg:  992px;
+$bp-xl:  1200px;
+
+// Transitions
+$transition-default: all 0.3s ease;
+$transition-snappy:  all 0.3s cubic-bezier(0.07, 0.95, 0, 1);

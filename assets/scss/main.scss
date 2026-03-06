@@ -1,0 +1,309 @@
+@import 'variables';
+@import 'base';
+
+// ─── Layout ──────────────────────────────────────────────────────────────────
+
+.container {
+  max-width: 1140px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+// ─── Section ─────────────────────────────────────────────────────────────────
+
+.section {
+  padding-block: 5rem;
+}
+
+.section--light {
+  background-color: $color-foreground;
+  color: $color-background;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.section--mid {
+  background-color: $color-background-light;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.section-title {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.75rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+  }
+}
+
+.section-title--blue::after  { background-color: $color-blue; }
+.section-title--green::after { background-color: $color-green; }
+.section-title--red::after   { background-color: $color-red; }
+
+// ─── Hero ─────────────────────────────────────────────────────────────────────
+
+.hero {
+  padding-block: 4rem 5rem;
+  text-align: center;
+}
+
+.hero__image {
+  margin-inline: auto;
+  margin-bottom: 2.5rem;
+  max-width: 220px;
+
+  @media (min-width: $bp-md) {
+    max-width: 280px;
+  }
+}
+
+.hero__title {
+  color: $color-green;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  color: $color-foreground-darker;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+  max-width: 52ch;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+}
+
+.hero__downloads {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+  }
+}
+
+// ─── Download Platform Block ──────────────────────────────────────────────────
+
+.platform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.platform__label {
+  color: $color-foreground-darker;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.platform__secondary {
+  font-size: 0.8rem;
+  color: $color-foreground-darker;
+  transition: $transition-snappy;
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.platform__brew {
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+  font-size: 0.8rem;
+  color: $color-foreground-darker;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+// ─── Button ───────────────────────────────────────────────────────────────────
+
+.btn {
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.65em 1.75em;
+  transition: $transition-snappy;
+  white-space: nowrap;
+}
+
+.btn--blue {
+  border: 2px solid $color-blue;
+  color: $color-foreground;
+
+  &:hover {
+    box-shadow: 0 0 12px 0 rgba($color-blue, 0.5);
+    color: $color-foreground;
+  }
+}
+
+.btn--green {
+  border: 2px solid $color-green;
+  color: $color-foreground;
+
+  &:hover {
+    box-shadow: 0 0 12px 0 rgba($color-green, 0.5);
+    color: $color-foreground;
+  }
+}
+
+// ─── Features ─────────────────────────────────────────────────────────────────
+
+.features {
+  display: grid;
+  gap: 3rem;
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature-item__title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: $color-background;
+  margin-bottom: 0.35rem;
+}
+
+.feature-item__desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: darken($color-background, 5%);
+}
+
+.features__screenshot {
+  img {
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// ─── Downloads Section ────────────────────────────────────────────────────────
+
+.downloads-grid {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.download-col__heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+// ─── Feedback ─────────────────────────────────────────────────────────────────
+
+.feedback {
+  text-align: center;
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+.feedback p {
+  font-size: 1rem;
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+}
+
+.link-inline {
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: $transition-snappy;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.link-inline--green {
+  color: $color-green;
+  &::after { background-color: $color-green; }
+}
+
+// ─── Footer ───────────────────────────────────────────────────────────────────
+
+.footer {
+  background-color: $color-background;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  padding-block: 3rem;
+  text-align: center;
+}
+
+.footer__text {
+  color: $color-foreground-darker;
+  font-size: 0.9rem;
+  line-height: 2;
+  margin-bottom: 0.25rem;
+}
+
+.footer__built {
+  color: $color-foreground-darker;
+  font-size: 0.8rem;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.icon-link {
+  display: inline-flex;
+  cursor: pointer;
+
+  svg {
+    width: 26px;
+    height: 26px;
+    fill: $color-foreground-darker;
+    transition: $transition-default;
+  }
+
+  &:hover svg {
+    fill: $color-green;
+  }
+}
