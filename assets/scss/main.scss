@@ -159,16 +159,6 @@
   }
 }
 
-.btn--green {
-  border: 2px solid $color-green;
-  color: $color-foreground;
-
-  &:hover {
-    box-shadow: 0 0 12px 0 rgba($color-green, 0.5);
-    color: $color-foreground;
-  }
-}
-
 // ─── Features ─────────────────────────────────────────────────────────────────
 
 .features {
@@ -197,7 +187,7 @@
 .feature-item__desc {
   font-size: 0.95rem;
   line-height: 1.7;
-  color: darken($color-background, 5%);
+  color: #222b3a;
 }
 
 .features__screenshot {
@@ -208,6 +198,24 @@
 }
 
 // ─── Downloads Section ────────────────────────────────────────────────────────
+
+.section-heading--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+}
+
+.releases-link {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  letter-spacing: 0.03em;
+}
+
 
 .downloads-grid {
   display: grid;

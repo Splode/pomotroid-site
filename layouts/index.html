@@ -4,17 +4,18 @@
     {{ partial "head.html" . }}
   </head>
   <body>
+  <main>
 
     <!-- ── Hero ──────────────────────────────────────────────────────────── -->
     <section class="hero">
       <div class="container">
 
         <div class="hero__image">
-          <img src="/pomotroid-site-timer.svg" alt="Pomotroid timer" />
+          <img src="/pomotroid-site-timer.svg" alt="Pomotroid timer" width="250" height="250" />
         </div>
 
         <h1 class="hero__title">Pomotroid</h1>
-        <p class="hero__subtitle">A simple, configurable and visually pleasing Pomodoro timer.</p>
+        <p class="hero__subtitle">A Pomodoro timer with session statistics, 37 themes, and global shortcuts. Free and open source.</p>
 
         <div class="hero__downloads">
 
@@ -76,7 +77,10 @@
           </ul>
 
           <div class="features__screenshot">
-            <img src="/pomotroid-screens.png" alt="Pomotroid screenshots" />
+            <picture>
+              <source srcset="/pomotroid-screens.webp" type="image/webp" />
+              <img src="/pomotroid-screens.png" alt="Pomotroid screenshots" width="1080" height="810" loading="lazy" />
+            </picture>
           </div>
 
         </div>
@@ -86,8 +90,9 @@
     <!-- ── Downloads ─────────────────────────────────────────────────────── -->
     <section class="section section--mid">
       <div class="container">
-        <div style="text-align: center;">
+        <div class="section-heading--center">
           <h2 class="section-title section-title--blue">Download</h2>
+          <a href="https://github.com/Splode/pomotroid/releases" class="releases-link link-inline link-inline--green" target="_blank" rel="noopener">All releases →</a>
         </div>
         <div class="downloads-grid">
 
@@ -124,23 +129,27 @@
 
         </div>
 
-        <!-- ── Feedback ────────────────────────────────────────────────── -->
-        <div class="section" style="padding-bottom: 0;">
-          <div class="feedback">
-            <h2 class="section-title section-title--green">Feedback</h2>
-            <p>
-              Found a bug or would like to suggest a new feature?
-              <a href="https://github.com/Splode/pomotroid/issues" class="link-inline link-inline--green" target="_blank" rel="noopener">Open an issue</a>.
-            </p>
-            <p>
-              Feel free to explore the source or contribute via the
-              <a href="https://github.com/Splode/pomotroid" class="link-inline link-inline--green" target="_blank" rel="noopener">GitHub repo</a>.
-            </p>
-          </div>
-        </div>
-
       </div>
     </section>
+
+    <!-- ── Feedback ──────────────────────────────────────────────────────── -->
+    <section class="section">
+      <div class="container">
+        <div class="feedback">
+          <h2 class="section-title section-title--green">Feedback</h2>
+          <p>
+            Found a bug or would like to suggest a new feature?
+            <a href="https://github.com/Splode/pomotroid/issues" class="link-inline link-inline--green" target="_blank" rel="noopener">Open an issue</a>.
+          </p>
+          <p>
+            Feel free to explore the source or contribute via the
+            <a href="https://github.com/Splode/pomotroid" class="link-inline link-inline--green" target="_blank" rel="noopener">GitHub repo</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
     <!-- ── Footer ────────────────────────────────────────────────────────── -->
     <footer class="footer">
