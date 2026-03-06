@@ -1,0 +1,25 @@
+baseURL = "https://pomotroid.app"
+languageCode = "en-us"
+title = "Pomotroid"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  version = "1.0.0"
+  description = "Pomotroid is a simple, configurable Pomodoro timer with session statistics, 37 bundled themes, and global shortcuts. Free and open source. Available for Windows, macOS, and Linux."
+
+[params.downloads.windows]
+  primary      = "https://github.com/Splode/pomotroid/releases/download/v1.0.0/Pomotroid_1.0.0_x64-setup.exe"
+  primaryLabel = "Download for Windows"
+  secondary    = "https://github.com/Splode/pomotroid/releases/download/v1.0.0/Pomotroid_1.0.0_x64.exe"
+  secondaryLabel = "Standalone .exe"
+
+[params.downloads.mac]
+  primary      = "https://github.com/Splode/pomotroid/releases/download/v1.0.0/Pomotroid_1.0.0_universal.dmg"
+  primaryLabel = "Download for macOS"
+  brew         = "brew install --cask pomotroid"
+
+[params.downloads.linux]
+  primary      = "https://github.com/Splode/pomotroid/releases/download/v1.0.0/Pomotroid_1.0.0_amd64.AppImage"
+  primaryLabel = "Download for Linux"
+  secondary    = "https://github.com/Splode/pomotroid/releases/download/v1.0.0/Pomotroid_1.0.0_amd64.deb"
+  secondaryLabel = "Download .deb"

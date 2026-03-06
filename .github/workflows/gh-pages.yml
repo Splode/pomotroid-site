@@ -1,0 +1,37 @@
+name: Deploy redirect to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Write redirect page
+        run: |
+          mkdir -p _redirect
+          cat > _redirect/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html lang="en">
+            <head>
+              <meta charset="utf-8" />
+              <meta http-equiv="refresh" content="0; url=https://pomotroid.app" />
+              <link rel="canonical" href="https://pomotroid.app" />
+              <title>Pomotroid</title>
+              <script>window.location.href = "https://pomotroid.app";</script>
+            </head>
+            <body>
+              <p><a href="https://pomotroid.app">Redirecting to pomotroid.app…</a></p>
+            </body>
+          </html>
+          EOF
+          touch _redirect/.nojekyll
+
+      - name: Deploy to splode/pomotroid gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.GH_TOKEN }}
+          external_repository: splode/pomotroid
+          publish_dir: _redirect
+          publish_branch: gh-pages
