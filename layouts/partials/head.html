@@ -8,8 +8,23 @@
 <meta name="description" content="{{ .Site.Params.description }}" />
 <meta name="keywords" content="pomodoro, pomotroid, open source, tauri, rust, svelte" />
 
-<link rel="canonical" href="{{ .Site.BaseURL }}" />
+<link rel="canonical" href="{{ .Permalink }}" />
 
+<link rel="alternate" type="application/rss+xml" title="Pomotroid News" href="/news/index.xml" />
+
+{{ if and .IsPage (eq .Section "news") }}
+<meta property="og:title" content="{{ .Title }} — Pomotroid" />
+<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{ if .Params.cover }}
+<meta property="og:image" content="{{ .Params.cover | absURL }}" />
+{{ else }}
+<meta property="og:image" content="{{ .Site.BaseURL }}pomotroid-share-1200x630.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+{{ end }}
+{{ else }}
 <meta property="og:title" content="Pomotroid - A Simple, Configurable and Visually Pleasing Pomodoro Timer" />
 <meta property="og:description" content="{{ .Site.Params.description }}" />
 <meta property="og:type" content="website" />
@@ -17,6 +32,7 @@
 <meta property="og:image" content="{{ .Site.BaseURL }}pomotroid-share-1200x630.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
+{{ end }}
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="Pomotroid" />

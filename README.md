@@ -31,6 +31,35 @@ hugo --minify
 
 Edit `hugo.toml` and update the version and download URLs under `[params.downloads]`. No template changes needed.
 
+## Writing a post
+
+Posts live in `content/news/` as Hugo page bundles (leaf bundles). Each post is a directory containing an `index.md` file. Images and other assets can be colocated alongside it.
+
+```
+content/news/
+  my-first-post/
+    index.md        ← post content
+    cover.png       ← optional cover image (colocated)
+```
+
+**Front matter fields:**
+
+```yaml
+---
+title: "My Post Title"
+date: 2026-03-06
+description: "A short summary shown in cards and OG meta."
+cover: cover.png   # optional — used as og:image and news card cover
+---
+```
+
+- `title` — displayed in the card, page heading, and OG title
+- `date` — used for ordering (newest first) and display
+- `description` — shown in cards and used as `og:description`
+- `cover` — optional image filename relative to the bundle directory; renders in cards and as `og:image`
+
+The post URL will be `/news/<bundle-directory-name>/`.
+
 ## Deployment
 
 - **Netlify** — auto-deploys on push to `main` using `netlify.toml`

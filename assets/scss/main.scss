@@ -271,6 +271,288 @@
   &::after { background-color: $color-green; }
 }
 
+// ─── Nav ──────────────────────────────────────────────────────────────────────
+
+.site-nav {
+  background-color: $color-background;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding-block: 0.75rem;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.site-nav__home {
+  color: $color-green;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: $transition-snappy;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.site-nav__link {
+  color: $color-foreground-darker;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: $transition-snappy;
+
+  &:hover,
+  &.is-active {
+    color: $color-green;
+  }
+
+  &.is-active {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+  }
+}
+
+// ─── Latest (landing page) ────────────────────────────────────────────────────
+
+.latest-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+}
+
+.latest-header__links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+// ─── News Cards ───────────────────────────────────────────────────────────────
+
+.news-grid {
+  display: grid;
+  gap: 1.5rem;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.news-card {
+  background-color: $color-background-light;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: $transition-snappy;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.news-card__cover {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: $transition-default;
+  }
+}
+
+.news-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.25rem;
+}
+
+.news-card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color-foreground;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.news-card__date {
+  font-size: 0.75rem;
+  color: $color-foreground-darker;
+  opacity: 0.7;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.75rem;
+}
+
+.news-card__desc {
+  font-size: 0.875rem;
+  color: $color-foreground-darker;
+  line-height: 1.65;
+}
+
+// ─── News Index Page ──────────────────────────────────────────────────────────
+
+.news-index__header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+
+  .section-title {
+    margin-bottom: 0;
+  }
+}
+
+.news-index__rss {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.pagination__link {
+  color: $color-foreground-darker;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  transition: $transition-snappy;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &.is-current {
+    color: $color-green;
+    font-weight: 600;
+  }
+}
+
+// ─── Single Post ──────────────────────────────────────────────────────────────
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-header__back {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: $color-foreground-darker;
+  margin-bottom: 1.5rem;
+  transition: $transition-snappy;
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
+.post-header__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: $color-foreground;
+  margin-bottom: 0.75rem;
+}
+
+.post-header__date {
+  font-size: 0.85rem;
+  color: $color-foreground-darker;
+  opacity: 0.7;
+  letter-spacing: 0.03em;
+}
+
+.post-body {
+  max-width: 65ch;
+  font-size: 1rem;
+  line-height: 1.85;
+  color: $color-foreground-darker;
+
+  h2, h3, h4 {
+    color: $color-foreground;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 { font-size: 1.4rem; }
+  h3 { font-size: 1.15rem; }
+
+  p { margin-bottom: 1.25rem; }
+
+  a {
+    color: $color-green;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  img {
+    border-radius: 8px;
+    margin-block: 2rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  code {
+    font-family: ui-monospace, 'Cascadia Code', monospace;
+    font-size: 0.875em;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 0.15em 0.4em;
+    border-radius: 3px;
+  }
+
+  ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.25rem;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+}
+
+// ─── RSS Icon ─────────────────────────────────────────────────────────────────
+
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  color: $color-foreground-darker;
+  transition: $transition-snappy;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: $color-green;
+  }
+}
+
 // ─── Footer ───────────────────────────────────────────────────────────────────
 
 .footer {
