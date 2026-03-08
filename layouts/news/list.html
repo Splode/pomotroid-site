@@ -21,7 +21,7 @@
         {{ $paginator := .Paginate .Pages 12 }}
         <div class="news-grid">
           {{ range $paginator.Pages }}
-          <a href="{{ .Permalink }}" class="news-card">
+          <a href="{{ .RelPermalink }}" class="news-card">
             {{ if .Params.cover }}
             <div class="news-card__cover">
               <img src="{{ .Params.cover | relURL }}" alt="{{ .Title }}" loading="lazy" />
