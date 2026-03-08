@@ -7,8 +7,8 @@
   HUGO_EXTENDED = "true"
   HUGO_BASEURL  = "https://pomotroid.app"
 
-[context.deploy-preview.environment]
-  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
+[context.deploy-preview]
+  command = "hugo --minify -b $DEPLOY_PRIME_URL"
 
-[context.branch-deploy.environment]
-  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
+[context.branch-deploy]
+  command = "hugo --minify -b $DEPLOY_PRIME_URL"
