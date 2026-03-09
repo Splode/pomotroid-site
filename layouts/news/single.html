@@ -14,6 +14,9 @@
           <h1 class="post-header__title">{{ .Title }}</h1>
           <time class="post-header__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
         </div>
+        {{ with .Resources.GetMatch .Params.cover }}
+        <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" class="post-cover" />
+        {{ end }}
         <div class="post-body">
           {{ .Content }}
         </div>

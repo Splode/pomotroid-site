@@ -2,6 +2,7 @@
 title: "Welcome to the Pomotroid News Feed"
 date: 2026-03-06
 description: "A place for development updates, release notes, and community news."
+cover: cover.png
 ---
 
 Welcome to the Pomotroid news feed — a place to share what's happening with the app, from new releases to behind-the-scenes development updates.
