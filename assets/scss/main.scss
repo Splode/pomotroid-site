@@ -193,7 +193,6 @@
 .features__screenshot {
   img {
     border-radius: 8px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -451,6 +450,14 @@
   }
 }
 
+// ─── Post Cover ───────────────────────────────────────────────────────────────
+
+.post-cover {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 2.5rem;
+}
+
 // ─── Single Post ──────────────────────────────────────────────────────────────
 
 .post-header {
@@ -503,6 +510,12 @@
 
   p { margin-bottom: 1.25rem; }
 
+  hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    margin-block: 2.5rem;
+  }
+
   a {
     color: $color-green;
     text-decoration: underline;
@@ -513,7 +526,22 @@
   img {
     border-radius: 8px;
     margin-block: 2rem;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  figure {
+    margin-block: 2rem;
+
+    img {
+      margin-block: 0;
+    }
+  }
+
+  figcaption {
+    font-size: 0.8rem;
+    color: $color-foreground-darker;
+    opacity: 0.6;
+    margin-top: 0.6rem;
+    letter-spacing: 0.02em;
   }
 
   code {

@@ -22,9 +22,9 @@
         <div class="news-grid">
           {{ range $paginator.Pages }}
           <a href="{{ .RelPermalink }}" class="news-card">
-            {{ if .Params.cover }}
+            {{ with .Resources.GetMatch .Params.cover }}
             <div class="news-card__cover">
-              <img src="{{ .Params.cover | relURL }}" alt="{{ .Title }}" loading="lazy" />
+              <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy" />
             </div>
             {{ end }}
             <div class="news-card__body">

@@ -80,7 +80,7 @@
           <div class="features__screenshot">
             <picture>
               <source srcset="/pomotroid-screens.webp" type="image/webp" />
-              <img src="/pomotroid-screens.png" alt="Pomotroid screenshots" width="1080" height="810" loading="lazy" />
+              <img src="/pomotroid-screens.png" alt="Pomotroid screenshots" width="1080" height="630" loading="lazy" />
             </picture>
           </div>
 
@@ -105,9 +105,9 @@
         <div class="news-grid">
           {{ range first 3 ($newsPosts.ByDate.Reverse) }}
           <a href="{{ .RelPermalink }}" class="news-card">
-            {{ if .Params.cover }}
+            {{ with .Resources.GetMatch .Params.cover }}
             <div class="news-card__cover">
-              <img src="{{ .Params.cover | relURL }}" alt="{{ .Title }}" loading="lazy" />
+              <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" loading="lazy" />
             </div>
             {{ end }}
             <div class="news-card__body">
